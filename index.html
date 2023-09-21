@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Documentação</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <h2>Documentação</h2>
+    <p>O Flexbox (Flexible Box Module) ou "Caixa Flexível" é um conceito do CSS para estilizarmos diversas propriedades de maneira mais rápida e eficaz.</p>
+
+    <h3>display: flex</h3>
+
+    <p class="descricao-propriedade">
+        A propriedade display: flex deve ser a primeira a ser declarada no CSS. A partir dela é que o CSS vai entender que precisa estilizar o conteúdo do contêiner com a Caixa Flexível (Flexbox).
+    </p>
+    <p>Exemplo:</p>
+    <div class="container display-flex">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+    <!-- table>(tr>th.propriedade+th.valor)+tr*3>td.propriedade+td.valor -->
+    <table>
+        <caption>Valores padrão das propriedades do Flexbox</caption>
+        <tr>
+            <th class="propriedade">Propriedade</th>
+            <th class="valor">Valor</th>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-direction</td>
+            <td class="valor">row</td>
+        </tr>
+        <tr>
+            <td class="propriedade">justify-content</td>
+            <td class="valor">flex-start</td>
+        </tr>
+        <tr>
+            <td class="propriedade">align-content</td>
+            <td class="valor">flex-start</td>
+        </tr>
+    </table>
+
+    <h2>Entendendo os eixos do Flexbox</h2>
+    <p>Sempre que falarmos de Flexbox devemos lembrar que todas as operações realizadas nele serão relacionadas a dois eixos: principal e secundário. Para entendermos melhor, devemos lembrar que o eixo X se refere ao sentido horizontal e o eixo Y ao sentido vertical.</p>
+    <img src="./eixo-x-e-y.png" alt="Eixo X e Y">
+          
+    <h3>flex-direction</h3>
+    <p></p>
+    
+    
+    <h3>justify-content:</h3>
+    <p class="descricao-propriedade">A propriedade justify-content pode ser usada para justificar o centeúdo do elemento contêiner em seu eixo primário, ou seja, eixo x (row, row-reverse) ou eixo y (column, column-reverse).</p>
+    <p>Exemplo:</p>
+    <h4>center</h4>
+    <p class="descricao-propriedade">
+        O valor "center" vai alinhar o conteúdo ao centro do eixo primário.
+    </p>
+    <div class="container display-flex justify-content-center">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+    <h4>flex-start</h4>
+
+</body>
+</html>
