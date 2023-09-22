@@ -60,7 +60,7 @@ tr:nth-child(even) {
 }
 
 .container {
-    height: 300px;
+    height: 600px;
     background-color: antiquewhite;
     border: 5px solid #f00;
     }
@@ -76,6 +76,22 @@ tr:nth-child(even) {
     display: flex;
 }
 
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
 .justify-content-center {
     justify-content: center
 }
@@ -84,11 +100,29 @@ tr:nth-child(even) {
     justify-content: flex-start;
 }
 
-.justify-content {
-    justify-content: ;
+.justify-content-flex-end {
+    justify-content: flex-end ;
 }
 
+.justify-content-space-between {
+    justify-content: space-between;
+}
 
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-initial {
+    justify-content: initial;
+}
+
+.justify-content-inherit {
+    justify-content: inherit;
+}
 
 .descricao-propriedade {
 

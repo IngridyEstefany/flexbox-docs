@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox - Documentação</title>
     <link rel="stylesheet" href="./style.css">
-    
+        
 </head>
 <body>
     <h1>Flexbox</h1>
@@ -50,18 +50,62 @@
     <h2>Entendendo os eixos do Flexbox</h2>
     <p>Sempre que falarmos de Flexbox devemos lembrar que todas as operações realizadas nele serão relacionadas a dois eixos: principal e secundário. Para entendermos melhor, devemos lembrar que o eixo X se refere ao sentido horizontal e o eixo Y ao sentido vertical.</p>
     <img src="./eixo-x-e-y.png" alt="Eixo X e Y">
-          
-    <h3>flex-direction</h3>
-    <p></p>
+    <p>Não esqueça: Quando falarmos em ROW, estaremos nos referindo a linha (eixo x) e quando falarmos COLUMN, estaremos nos referindo a coluna (eixo y). </p>
+
+    <h3>flex-direction:</h3>
+    <p class="descricao-propriedade">A propriedade flex-direction refere-se à direção dos itens flexíveis. Nesta propriedade veremos 4 diferentes valores.</p>
+    <p>Observação: devemos lembrar sempre que se o item não for flexível, a propriedade não terá efeito.</p>
+
+    <h4>row</h4>
+    <p class="descricao-propriedade">Quando utilizarmos esta propriedade, os itens dentro da caixa flexível estarão em linha. Observe que como nosso padrão de leitura se realiza da esquerda para a direita, será esse sentido que aparecerá no flexbox.</p>
+    <p>Para facilitar a visualização, enumeramos de 1 a 5 cada caixinha dentro do flexbox.</p>
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-direction-row">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
     
-    
+    <h4>row-reverse</h4>
+    <p class="descricao-propriedade">Quando utilizarmos esta propriedade, os itens dentro da caixa flexível estarão em linha, porém como há o reverse, ele se iniciará do fim para o começo (da direita para a esquerda). Podemos assimilar ele as leituras de mangás, pois possuem a mesma direção que os Japoneses utilizam.</p>
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-direction-row-reverse">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>column</h4>
+    <p class="descricao-propriedade">Quando utilizarmos esta propriedade, os itens dentro da caixa flexível estarão em coluna, a esquerda, de cima para baixo. </p>
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-direction-column">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>column-reverse</h4>
+    <p class="descricao-propriedade">Quando utilizarmos esta propriedade, os itens dentro da caixa flexível estarão em coluna, porém como está com o reverse, ele se iniciará a esquerda de baixo para cima.</p>
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-direction-column-reverse">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
     <h3>justify-content:</h3>
     <p class="descricao-propriedade">A propriedade justify-content pode ser usada para justificar o centeúdo do elemento contêiner em seu eixo primário, ou seja, eixo x (row, row-reverse) ou eixo y (column, column-reverse).</p>
-    <p>Exemplo:</p>
     <h4>center</h4>
-    <p class="descricao-propriedade">
-        O valor "center" vai alinhar o conteúdo ao centro do eixo primário.
-    </p>
+    <p class="descricao-propriedade">O valor "center" vai alinhar o conteúdo ao centro do eixo primário.</p>
+    <p>Exemplo:</p>
     <div class="container display-flex justify-content-center">
         <div class="contido"></div>
         <div class="contido"></div>
@@ -69,7 +113,68 @@
         <div class="contido"></div>
         <div class="contido"></div>
     </div>
-    <h4>flex-start</h4>
 
+    <h4>flex-start</h4>
+    <p class="descricao-propriedade">O valor "flex-start" vai alinhar o conteúdo ao início do eixo primário.</p>
+    <p>Exemplo:</p>
+    <div class="container display-flex justify-content-flex-start">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+    <h4>flex-end</h4>
+    <p class="descricao-propriedade">O valor "flex-end" vai alinhar o conteúdo ao fim do eixo primário.</p>
+    <p>Exemplo:</p>
+    <div class="container display-flex justify-content-flex-end">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+    <h4>space-between</h4>
+    <p class="descricao-propriedade">O valor "space-between" vai distribuir uniformemente o conteúdo no contêiner de alinhamento no eixo primário, alinhando o primeiro item a borda inicial e o último item a borda final do contêiner, contendo o mesmo espaçamento entre todos os itens.</p>
+    <p>Exemplo:</p>
+    <div class="container display-flex justify-content-space-between">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+    <h4>space-around</h4>
+    <p class="descricao-propriedade">O valor "space-around" vai distribuir o conteúdo no contêiner de alinhamento no eixo primário. O espaçamento entre cada caixinha será o mesmo, porém nas bordas, antes da primeira caixinha e depois da última caixinha, será metade do espaço que há entre as caixinhas.</p>
+    <p>Exemplo:</p>
+    <div class="container display-flex justify-content-space-around">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+    <h4>space-evenly</h4>
+    <p class="descricao-propriedade">O valor "space-evenly" vai  distribuir o conteúdo no contêiner de alinhamento no eixo primário. O espaçamento entre todas as caixinhas e as bordas inicial e final serão rexatamente iguais.</p>
+    <div class="container display-flex justify-content-space-evenly">
+        <p>Exemplo:</p>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+    
+    <h4>initial</h4>
+    <p class="descricao-propriedade">O valor "initial" é a palavra-chave usada para definir uma propriedade ao CSS com seu valor padrão.</p>
+    
+    <h4>inherit</h4>
+    <p class="descricao-propriedade">O valor "flex-end" é a palavra-chave usada para especificar que uma propriedade deve herdar seu valor de seu elemento pai.</p>
+    
+    
 </body>
 </html>
