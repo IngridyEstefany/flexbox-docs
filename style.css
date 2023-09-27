@@ -71,6 +71,9 @@ tr:nth-child(even) {
     background-color: aqua;
     border: 5px solid #00f;
     }
+.contido-height-auto {
+    height: auto;
+}
 
 .display-flex {
     display: flex;
@@ -124,6 +127,32 @@ tr:nth-child(even) {
     justify-content: inherit;
 }
 
+.align-items-normal {
+    align-items: normal;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.align-items-center {
+    align-items: center
+}
+
+.align-items-flex-start {
+align-items: flex-start;
+}
+
+.align-items-flex-end {
+align-items: flex-end;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+
 .descricao-propriedade {
 
 }
+
