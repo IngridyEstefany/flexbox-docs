@@ -246,35 +246,87 @@
         <div class="contido"></div>
     </div>
 
-
-
-
-
-
-    <h4>normal</h4>
-    <p class="descricao-propriedade">O valor "normal" vai  se comportar muitas vezes como stretch........</p>
-    <div class="container display-flex align-itens-normal">
-        <p>Exemplo:</p>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+    <h3>flex-wrap:</h3>
+    <p class="descricao-propriedade"> A propriedade flex-wrap especifica se os itens flexíveis devem ser agrupados ou não, ou seja, define se os itens devem ser forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas. Se o argumento for valido, ele define a direção em que as linhas são empilhadas.</p>
+    <h4>nowrap</h4>
+    <p class="descricao-propriedade">O valor "nowrap" mantém as caixinhas em uma unica linha, mesmo que para isso, seja necessário as comprimir. É o valor padrão da propriedade e especifica que os itens flexíveis não serão agrupados.</p>
+    <p>Exemplo:</p>
+    <div class="container-pequeno display-flex flex-wrap-nowrap">
+        <div class="contido-grande">1</div>
+        <div class="contido-grande">2</div>
+        <div class="contido-grande">3</div>
+        <div class="contido-grande">4</div>
+        <div class="contido-grande">5</div>
     </div>
-    <h4>normal</h4>
-    <p class="descricao-propriedade">O valor "normal" vai  se comportar muitas vezes como stretch........</p>
-    <div class="container display-flex align-itens-normal">
-        <p>Exemplo:</p>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+
+    <h4>wrap</h4>
+    <p class="descricao-propriedade">O valor "wrap" especifica que os itens flexíveis serão agrupados se necessário, ou seja, as caixinhas poderão ser divididas em mais de uma linha.</p>
+    <p>Exemplo:</p>
+    <div class="container-pequeno display-flex flex-wrap-wrap">
+        <div class="contido-grande">1</div>
+        <div class="contido-grande">2</div>
+        <div class="contido-grande">3</div>
+        <div class="contido-grande">4</div>
+        <div class="contido-grande">5</div>
     </div>
-    <h4>normal</h4>
-    <p class="descricao-propriedade">O valor "normal" vai  se comportar muitas vezes como stretch........</p>
+
+    <h4>wrap-reverse</h4>
+    <p class="descricao-propriedade">O valor "wrap-reverse" especifica que os itens flexíveis serão agrupados, se necessário, na ordem inversa, ou seja, se comporta da mesma maneira que o wrap, dividindo em mais de uma linha as caixinhas, porém a linha ocorre na direção contrária.</p>
+    <p>Exemplo:</p>
+    <div class="container-pequeno display-flex flex-wrap-wrap-reverse">
+        <div class="contido-grande">1</div>
+        <div class="contido-grande">2</div>
+        <div class="contido-grande">3</div>
+        <div class="contido-grande">4</div>
+        <div class="contido-grande">5</div>
+    </div>
+
+    <h3>flex-flow:</h3>
+    <p class="descricao-propriedade"> A propriedade flex-flow é uma junção das propriedades flex-direct e flex-wrap, por isso poderemos juntas os comandos de ambas em diversas combinações (flex-flow: row nowrap; flex-flow: row-reverse nowrap; flex-flow: column nowrap; flex-flow: column-reverse nowrap; flex-flow: row wrap; flex-flow: row-reverse wrap; flex-flow: column wrap; flex-flow: column-reverse wrap; flex-flow: row wrap-reverse; flex-flow: row-reverse wrap-reverse; flex-flow: column wrap-reverse; e flex-flow: column-reverse wrap-reverse;).</p>
+    <p>Mostraremos aqui um exemplo para melhor compreensão da propriedade.</p>
+    <h4>column wrap-reverse</h4>
+    <p class="descricao-propriedade">O valor "column wrap-reverse" refere-se ao flex-direction column e o flex-wrap wrap-reverse, ou seja, estamos dizendo que o sentido da direção será em coluna e que as caixinhas podem ser quebradas em mais de uma linha no sentido contrário do padrão que estamos habituados.</p>
+    <p>Exemplo:</p>
+    <div class="container-pequeno display-flex flex-flow-column-wrap-reverse">
+        <div class="contido-grande">1</div>
+        <div class="contido-grande">2</div>
+        <div class="contido-grande">3</div>
+        <div class="contido-grande">4</div>
+        <div class="contido-grande">5</div>
+    </div>
+
+
+    <h3>align-content:</h3>
+    <p class="descricao-propriedade"> A propriedade align-content especifica como as linhas flexíveis são distribuídas ao longo do eixo cruzado em um flexbox. No layout flexbox, o eixo principal está no flex-direction (o padrão é 'linha', horizontal) e o eixo transversal é perpendicular ao eixo principal (o padrão é 'coluna', vertical).</p>
+    <p>Dica: Utilize a propriedade justify-content para alinhar os itens no eixo principal.</p>
+    <h4>stretch</h4>
+    <p class="descricao-propriedade"> O valor "stretch" é o padrão da propriedade. As linhas se esticam para ocupar o espaço restante.</p>
+    <p>Exemplo:</p>
+    <div class="container display-flex align-content-stretch">
+        <div class="contido-grande contido-width-100"></div>
+        <div class="contido-grande contido-width-100"></div>
+        <div class="contido-grande contido-width-100"></div>
+        <div class="contido-grande contido-width-100"></div>
+        <div class="contido-grande contido-width-100"></div>
+    </div>
+
+    <!-- Esta propriedade não tem efeito em flexbox de linha única, ou seja, aqueles com flex-wrap: nowrap. -->
+
+    <h4>center</h4>
+    <p class="descricao-propriedade">O valor "center" empacota as caixinas em direção ao centro do flexbox.</p>
+    <p>Exemplo:</p>
+    <div class="container display-flex align-content-center">
+        <div class="contido-grande"></div>
+        <div class="contido-grande"></div>
+        <div class="contido-grande"></div>
+        <div class="contido-grande"></div>
+        <div class="contido-grande"></div>
+    </div>
+
+    <h4>flex-start</h4>
+    <p class="descricao-propriedade">O valor "flex-start" empacota as caixinhas no início do flexbox. </p>
+    <p>Exemplo:</p>
     <div class="container display-flex align-itens-normal">
-        <p>Exemplo:</p>
         <div class="contido"></div>
         <div class="contido"></div>
         <div class="contido"></div>

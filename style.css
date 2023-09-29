@@ -71,8 +71,30 @@ tr:nth-child(even) {
     background-color: aqua;
     border: 5px solid #00f;
     }
+
 .contido-height-auto {
     height: auto;
+}
+
+
+/* VER DAQUI */
+.contido-width-100 {
+    width: 100%;
+}
+/* ATÉ AQUI */
+
+.container-pequeno {
+    height: 500px;
+    width: 500px;
+    background-color: antiquewhite;
+    border: 5px solid #f00;
+}
+
+.contido-grande {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 5px solid #00f;
 }
 
 .display-flex {
@@ -151,6 +173,49 @@ align-items: flex-end;
     align-items: baseline;
 }
 
+.flex-wrap-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.flex-flow-column-wrap-reverse {
+    flex-flow: column wrap-reverse;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-flex-start {
+    align-content: flex-start;
+}
+
+.align-content-flex-end {
+    align-content: flex-end;
+}
+
+.align-content-space-around {
+    align-content: space-around;
+}
+
+.align-content-space-between {
+    align-content: space-between;
+}
+
+.align-content-space-evenly {
+    align-content: space-evenly;
+}
 
 .descricao-propriedade {
 
