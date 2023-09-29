@@ -295,87 +295,162 @@
         <div class="contido-grande">5</div>
     </div>
 
-
     <h3>align-content:</h3>
-    <p class="descricao-propriedade"> A propriedade align-content especifica como as linhas flexíveis são distribuídas ao longo do eixo cruzado em um flexbox. No layout flexbox, o eixo principal está no flex-direction (o padrão é 'linha', horizontal) e o eixo transversal é perpendicular ao eixo principal (o padrão é 'coluna', vertical).</p>
-    <p>Dica: Utilize a propriedade justify-content para alinhar os itens no eixo principal.</p>
+    <p class="descricao-propriedade"> A propriedade align-content especifica como as linhas flexíveis são distribuídas ao longo do eixo cruzado em um flexbox. No layout flexbox, o eixo principal está no flex-direction (o padrão é 'linha', horizontal) e o eixo transversal é perpendicular ao eixo principal (o padrão é 'coluna', vertical). Portanto podemos dizer que o align-content alinha o conjunto dos items de contêiner.</p>
+    <p>Dica: Para que a propriedade funcione devemos usar em conjunto com a propriedade flex-wrap: wrap ou flex-wrap: wrap-reverse, pois ela não tem efeito em flexbox de linha única, ou seja, aqueles com flex-wrap: nowrap.</p>
     <h4>stretch</h4>
-    <p class="descricao-propriedade"> O valor "stretch" é o padrão da propriedade. As linhas se esticam para ocupar o espaço restante.</p>
+    <p class="descricao-propriedade"> O valor "stretch" é o padrão da propriedade. </p>
     <p>Exemplo:</p>
-    <div class="container display-flex align-content-stretch">
-        <div class="contido-grande contido-width-100"></div>
-        <div class="contido-grande contido-width-100"></div>
-        <div class="contido-grande contido-width-100"></div>
-        <div class="contido-grande contido-width-100"></div>
-        <div class="contido-grande contido-width-100"></div>
+    <div class="container display-flex flex-wrap-wrap align-content-stretch">
+        <div class="contido-grande">1</div>
+        <div class="contido-grande">2</div>
+        <div class="contido-grande">3</div>
+        <div class="contido-grande">4</div>
+        <div class="contido-grande">5</div>
+        <div class="contido-grande">6</div>
+        <div class="contido-grande">7</div>
+        <div class="contido-grande">8</div>
+        <div class="contido-grande">9</div>
+        <div class="contido-grande">10</div>
+        <div class="contido-grande">11</div>
+        <div class="contido-grande">12</div>
+        <div class="contido-grande">13</div>
+        <div class="contido-grande">14</div>
+        <div class="contido-grande">15</div>
+        <div class="contido-grande">16</div>
     </div>
 
-    <!-- Esta propriedade não tem efeito em flexbox de linha única, ou seja, aqueles com flex-wrap: nowrap. -->
 
     <h4>center</h4>
     <p class="descricao-propriedade">O valor "center" empacota as caixinas em direção ao centro do flexbox.</p>
     <p>Exemplo:</p>
-    <div class="container display-flex align-content-center">
-        <div class="contido-grande"></div>
-        <div class="contido-grande"></div>
-        <div class="contido-grande"></div>
-        <div class="contido-grande"></div>
-        <div class="contido-grande"></div>
+    <div class="container display-flex flex-wrap-wrap align-content-center">
+        <div class="contido-grande">1</div>
+        <div class="contido-grande">2</div>
+        <div class="contido-grande">3</div>
+        <div class="contido-grande">4</div>
+        <div class="contido-grande">5</div>
+        <div class="contido-grande">6</div>
+        <div class="contido-grande">7</div>
+        <div class="contido-grande">8</div>
+        <div class="contido-grande">9</div>
+        <div class="contido-grande">10</div>
+        <div class="contido-grande">11</div>
+        <div class="contido-grande">12</div>
+        <div class="contido-grande">13</div>
+        <div class="contido-grande">14</div>
+        <div class="contido-grande">15</div>
+        <div class="contido-grande">16</div>
     </div>
 
     <h4>flex-start</h4>
     <p class="descricao-propriedade">O valor "flex-start" empacota as caixinhas no início do flexbox. </p>
     <p>Exemplo:</p>
-    <div class="container display-flex align-content-flex-start">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+    <div class="container display-flex flex-wrap-wrap align-content-flex-start">
+        <div class="contido-grande">1</div>
+        <div class="contido-grande">2</div>
+        <div class="contido-grande">3</div>
+        <div class="contido-grande">4</div>
+        <div class="contido-grande">5</div>
+        <div class="contido-grande">6</div>
+        <div class="contido-grande">7</div>
+        <div class="contido-grande">8</div>
+        <div class="contido-grande">9</div>
+        <div class="contido-grande">10</div>
+        <div class="contido-grande">11</div>
+        <div class="contido-grande">12</div>
+        <div class="contido-grande">13</div>
+        <div class="contido-grande">14</div>
+        <div class="contido-grande">15</div>
+        <div class="contido-grande">16</div>
     </div>
 
     <h4>flex-end</h4>
     <p class="descricao-propriedade">O valor "flex-end" empacota as caixinhas no fim do flexbox. </p>
     <p>Exemplo:</p>
-    <div class="container display-flex align-content-flex-end">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+    <div class="container display-flex flex-wrap-wrap align-content-flex-end">
+        <div class="contido-grande">1</div>
+        <div class="contido-grande">2</div>
+        <div class="contido-grande">3</div>
+        <div class="contido-grande">4</div>
+        <div class="contido-grande">5</div>
+        <div class="contido-grande">6</div>
+        <div class="contido-grande">7</div>
+        <div class="contido-grande">8</div>
+        <div class="contido-grande">9</div>
+        <div class="contido-grande">10</div>
+        <div class="contido-grande">11</div>
+        <div class="contido-grande">12</div>
+        <div class="contido-grande">13</div>
+        <div class="contido-grande">14</div>
+        <div class="contido-grande">15</div>
+        <div class="contido-grande">16</div>
     </div>
 
     <h4>space-between</h4>
-    <p class="descricao-propriedade">O valor "space-between" distribue as caixinhas uniformemente no flexbox.</p>
+    <p class="descricao-propriedade">O valor "space-between" distribue as caixinhas uniformemente no flexbox, ou seja, o espaçamento entre cada par de itens adjacentes é o mesmo. O primeiro item está alinhado com a borda inicial do contêiner de alinhamento no eixo cruzado e o último item está alinhado com a borda final do contêiner de alinhamento no eixo cruzado.</p>
     <p>Exemplo:</p>
-    <div class="container display-flex align-content-space-between">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+    <div class="container display-flex flex-wrap-wrap align-content-space-between">
+        <div class="contido-grande">1</div>
+        <div class="contido-grande">2</div>
+        <div class="contido-grande">3</div>
+        <div class="contido-grande">4</div>
+        <div class="contido-grande">5</div>
+        <div class="contido-grande">6</div>
+        <div class="contido-grande">7</div>
+        <div class="contido-grande">8</div>
+        <div class="contido-grande">9</div>
+        <div class="contido-grande">10</div>
+        <div class="contido-grande">11</div>
+        <div class="contido-grande">12</div>
+        <div class="contido-grande">13</div>
+        <div class="contido-grande">14</div>
+        <div class="contido-grande">15</div>
+        <div class="contido-grande">16</div>
     </div>
 
     <h4>space-around</h4>
     <p class="descricao-propriedade">EDITAR..... O valor "space-around" distrubui uniformemente no flex container, com espaços de metade do tamanho em cada extremidade.</p>
     <p>Exemplo:</p>
-    <div class="container display-flex align-content-space-between">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+    <div class="container display-flex flex-wrap-wrap align-content-space-between">
+        <div class="contido-grande">1</div>
+        <div class="contido-grande">2</div>
+        <div class="contido-grande">3</div>
+        <div class="contido-grande">4</div>
+        <div class="contido-grande">5</div>
+        <div class="contido-grande">6</div>
+        <div class="contido-grande">7</div>
+        <div class="contido-grande">8</div>
+        <div class="contido-grande">9</div>
+        <div class="contido-grande">10</div>
+        <div class="contido-grande">11</div>
+        <div class="contido-grande">12</div>
+        <div class="contido-grande">13</div>
+        <div class="contido-grande">14</div>
+        <div class="contido-grande">15</div>
+        <div class="contido-grande">16</div>
     </div>
 
     <h4>space-evenly</h4>
     <p class="descricao-propriedade">O valor "space-evenly" distribue as caixinhas uniformemente no flexbox.</p>
     <p>Exemplo:</p>
-    <div class="container display-flex align-content-space-evenly">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+    <div class="container display-flex flex-wrap-wrap align-content-space-evenly">
+        <div class="contido-grande">1</div>
+        <div class="contido-grande">2</div>
+        <div class="contido-grande">3</div>
+        <div class="contido-grande">4</div>
+        <div class="contido-grande">5</div>
+        <div class="contido-grande">6</div>
+        <div class="contido-grande">7</div>
+        <div class="contido-grande">8</div>
+        <div class="contido-grande">9</div>
+        <div class="contido-grande">10</div>
+        <div class="contido-grande">11</div>
+        <div class="contido-grande">12</div>
+        <div class="contido-grande">13</div>
+        <div class="contido-grande">14</div>
+        <div class="contido-grande">15</div>
+        <div class="contido-grande">16</div>
     </div>
 
 
