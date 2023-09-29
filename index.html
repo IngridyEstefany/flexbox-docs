@@ -51,6 +51,7 @@
     <p>Sempre que falarmos de Flexbox devemos lembrar que todas as operações realizadas nele serão relacionadas a dois eixos: principal e secundário. Para entendermos melhor, devemos lembrar que o eixo X se refere ao sentido horizontal e o eixo Y ao sentido vertical.</p>
     <img src="./eixo-x-e-y.png" alt="Eixo X e Y">
     <p>Não esqueça: Quando falarmos em ROW, estaremos nos referindo a linha (eixo x) e quando falarmos COLUMN, estaremos nos referindo a coluna (eixo y). </p>
+    <p>Lembre-se: Existe o Eixo Transversal, ele se estente ao longo de toda a caixa, unindo de um lado ao outro, ele é a indicação do cruzamento entre o eixo principal e o secundário, portanto, ele estará perpendicular ao ao principal selecionado.</p>
 
     <h3>flex-direction:</h3>
     <p class="descricao-propriedade">A propriedade flex-direction refere-se à direção dos itens flexíveis. Nesta propriedade veremos 4 diferentes valores.</p>
@@ -320,9 +321,8 @@
         <div class="contido-grande">16</div>
     </div>
 
-
     <h4>center</h4>
-    <p class="descricao-propriedade">O valor "center" empacota as caixinas em direção ao centro do flexbox.</p>
+    <p class="descricao-propriedade">O valor "center" empacota as caixinas em direção ao centro do flexbox, ou seja, os itens são embalados alinhados entre si no centro do contêiner de alinhamento ao longo do eixo transversal.</p>
     <p>Exemplo:</p>
     <div class="container display-flex flex-wrap-wrap align-content-center">
         <div class="contido-grande">1</div>
@@ -344,7 +344,7 @@
     </div>
 
     <h4>flex-start</h4>
-    <p class="descricao-propriedade">O valor "flex-start" empacota as caixinhas no início do flexbox. </p>
+    <p class="descricao-propriedade">O valor "flex-start" empacota as caixinhas no início do flexbox, ou seja, os itens são embalados nivelados uns com os outros contra a borda do contêiner de alinhamento, dependendo do lado de início cruzado do contêiner flexível. </p>
     <p>Exemplo:</p>
     <div class="container display-flex flex-wrap-wrap align-content-flex-start">
         <div class="contido-grande">1</div>
@@ -366,7 +366,7 @@
     </div>
 
     <h4>flex-end</h4>
-    <p class="descricao-propriedade">O valor "flex-end" empacota as caixinhas no fim do flexbox. </p>
+    <p class="descricao-propriedade">O valor "flex-end" empacota as caixinhas no fim do flexbox, ou seja, Os itens são embalados uns contra os outros contra a borda do contêiner de alinhamento, dependendo do lado transversal do contêiner flexível.</p>
     <p>Exemplo:</p>
     <div class="container display-flex flex-wrap-wrap align-content-flex-end">
         <div class="contido-grande">1</div>
@@ -410,7 +410,7 @@
     </div>
 
     <h4>space-around</h4>
-    <p class="descricao-propriedade">EDITAR..... O valor "space-around" distrubui uniformemente no flex container, com espaços de metade do tamanho em cada extremidade.</p>
+    <p class="descricao-propriedade">O valor "space-around" distruibui uniformemente as linhas no flexbox, com espaços de metade do tamanho em cada extremidade, ou seja, o espaçamento entre cada par de itens adjacentes é o mesmo. O espaço vazio antes do primeiro e depois do último item é igual à metade do espaço entre cada par de itens adjacentes.</p>
     <p>Exemplo:</p>
     <div class="container display-flex flex-wrap-wrap align-content-space-between">
         <div class="contido-grande">1</div>
@@ -432,7 +432,7 @@
     </div>
 
     <h4>space-evenly</h4>
-    <p class="descricao-propriedade">O valor "space-evenly" distribue as caixinhas uniformemente no flexbox.</p>
+    <p class="descricao-propriedade">O valor "space-evenly" distribue as caixinhas uniformemente no flexbox, com espaço igual ao seu redor, ou seja, o espaçamento entre cada par de itens adjacentes, a borda inicial e o primeiro item, e a borda final e o último item, são exatamente iguais.</p>
     <p>Exemplo:</p>
     <div class="container display-flex flex-wrap-wrap align-content-space-evenly">
         <div class="contido-grande">1</div>
