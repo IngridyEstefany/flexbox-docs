@@ -56,20 +56,20 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #ccc;
+    background-color: #dfdddd;
 }
 
 .container {
     height: 600px;
-    background-color: antiquewhite;
-    border: 5px solid #f00;
+    background-color: rgba(250, 247, 225, 0.466);
+    border: 5px solid rgb(224, 12, 12);
     }
 
 .contido {
     width: 100px;
     height: 100px;
-    background-color: aqua;
-    border: 5px solid #00f;
+    background-color: rgba(29, 250, 250, 0.925);
+    border: 5px solid rgb(43, 121, 236);
     }
 
     
