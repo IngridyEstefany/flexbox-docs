@@ -266,10 +266,10 @@
         <p class="descricao-propriedade">O valor "baseline" posiciona as caixinhas na linha de base do contêiner. Observe que as caixinhas que contém o texto estão alinhadas pelo início do texto.</p>
         <p>Exemplo:</p>
         <div class="container display-flex align-items-baseline">
-            <div class="contido">Observe que este está alinhado.</div>
+            <div class="contido" style="font-size: 16pt; line-height: 1;">Observe que este está alinhado.</div>
             <div class="contido"></div>
-            <div class="contido">Observe que este está alinhado.</div>
-            <div class="contido">Observe que este está alinhado.</div>
+            <div class="contido" style="font-size: 16pt; line-height: 1; align-items: flex-end;">Observe.</div>
+            <div class="contido" style="font-size: 16pt; line-height: 1;">Observe.</div>
             <div class="contido"></div>
         </div>
     </section>
@@ -332,7 +332,7 @@
 
     <section id="align-content">
         <h3>align-content:</h3>
-        <p class="descricao-propriedade"> A propriedade align-content especifica como as linhas flexíveis são distribuídas ao longo do eixo cruzado em um flexbox. No layout flexbox, o eixo principal está no flex-direction (o padrão é 'linha', horizontal) e o eixo transversal é perpendicular ao eixo principal (o padrão é 'coluna', vertical). Portanto podemos dizer que o align-content alinha o conjunto dos items de contêiner.</p>
+        <p class="descricao-propriedade"> A propriedade align-content especifica como as linhas flexíveis são distribuídas ao longo do eixo cruzado em um flexbox. No layout flexbox, o eixo principal está no flex-direction (o padrão é 'linha', horizontal) e o eixo transversal é perpendicular ao eixo principal (o padrão é 'coluna', vertical). Portanto podemos dizer que o align-content alinha o conjunto dos itens de contêiner.</p>
         <p>Dica: Para que a propriedade funcione devemos usar em conjunto com a propriedade flex-wrap: wrap ou flex-wrap: wrap-reverse, pois ela não tem efeito em flexbox de linha única, ou seja, aqueles com flex-wrap: nowrap.</p>
         <h4>stretch</h4>
         <p class="descricao-propriedade"> O valor "stretch" é o padrão da propriedade. </p>
